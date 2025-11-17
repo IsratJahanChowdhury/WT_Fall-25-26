@@ -128,3 +128,11 @@ var row = document.createElement("div");
   del.onclick = function () {
     row.remove();
   };
+  row.appendChild(del);
+  list.appendChild(row);
+  document.getElementById("course").value = "";
+  return false;
+}
+</script>
+</body>
+</html>
