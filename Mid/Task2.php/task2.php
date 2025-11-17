@@ -118,3 +118,13 @@ var row = document.createElement("div");
   var cname = document.createElement("span");
   cname.innerHTML = course;
   row.appendChild(cname);
+   var del = document.createElement("button");
+  del.innerHTML = "Delete";
+  del.style.width = "60px";
+  del.style.background = "#ffcccc";
+  del.style.color = "black";
+  del.style.marginLeft = "10px";
+
+  del.onclick = function () {
+    row.remove();
+  };
