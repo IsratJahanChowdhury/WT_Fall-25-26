@@ -80,4 +80,14 @@ function registerStudent() {
   error.innerHTML = "";
   output.innerHTML = "";
 
-    
+    if (name === "" || email === "" || pass === "" || cpass === "") {
+    error.innerHTML = "Please fill all fields.";
+    return false;
+
+  }
+
+  if(email.indexOf("@") === -1) {
+    error.innerHTML = "Invalid email format.";
+    return false;
+
+  }
