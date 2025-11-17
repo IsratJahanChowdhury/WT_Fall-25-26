@@ -44,6 +44,40 @@
       color: red;
       text-align: center;
     }
+</style>
+</head>
+ <body>
+<h2>Student Registration</h2>
+<form onsubmit="return registerStudent()">
+<label>Full Name:</label>
+<input type="text" id="name" />
+<label>Email:</label>
+<input type="text" id="email" />
+<label>Password:</label>
+<input type="password" id="password" />
+<label>Confirm Password:</label>
+<input type="password" id="confirmpass" />
+<button type="submit">Register</button>
+</form>
+<div id="error"></div>
+<div id="output"></div>
+<h2>Course Registration</h2>
+<form onsubmit="return addCourse()">
+<label>Course Name:</label>
+<input type="text" id="course" />
+<button type="submit">Add Course</button>
+</form>
+<div id="courselist" style="width:300px; margin:auto; margin-top:10px;"></div>
+<script>
 
+function registerStudent() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var pass = document.getElementById("password").value;
+  var cpass = document.getElementById("confirmpass").value;
+  var error = document.getElementById("error");
+  var output = document.getElementById("output");
+  error.innerHTML = "";
+  output.innerHTML = "";
 
     
