@@ -106,3 +106,15 @@ function addCourse() {
   var course = document.getElementById("course").value;
   var list = document.getElementById("courselist");
   if (course === "") return false;
+var row = document.createElement("div");
+  row.style.background = "#9eb3c9ff";
+  row.style.padding = "8px";
+  row.style.marginTop = "8px";
+  row.style.borderRadius = "5px";
+  row.style.display = "flex";
+  row.style.justifyContent = "space-between";
+
+
+  var cname = document.createElement("span");
+  cname.innerHTML = course;
+  row.appendChild(cname);
