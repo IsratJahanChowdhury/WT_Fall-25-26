@@ -91,3 +91,18 @@ function registerStudent() {
     return false;
 
   }
+ if(pass !== cpass) {
+    error.innerHTML = "Passwords do not match.";
+    return false;
+  }
+
+  output.innerHTML = "<b>Registration Successful!</b><br><br>" + "Name: " + name + "<br>" + "Email: " + email;
+  return false;
+
+}
+
+function addCourse() {
+
+  var course = document.getElementById("course").value;
+  var list = document.getElementById("courselist");
+  if (course === "") return false;
