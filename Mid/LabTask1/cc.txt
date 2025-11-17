@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration & Course List</title>
+</head>
+<body>
+<style>
+           body{
+               font-family: Arial, sans-serif;
+               background-color: #eef7ff;
+               padding: 20px;
+           }
+
+<style>
+     
+    body{
+        background-color: rgb(242,219,231);
+    }
+    .para{
+         width: 500px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+    }
+      input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+ 
+    button {
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+    }
+ 
+    button:hover {
+      background-color: #0055aa;
+    }
+ 
+    #output {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #003366;
+    }
+ 
+    #error {
+      margin-top: 10px;
+      color: red;
+      text-align: center;
+    }
+    </style>
+
+    <div class="para">
+        <h1> Student Registration </h1>   
+
+<p>
+Full Name:
+<br>
+<input type="text" id="name">
+
+<br>
+</br>
+Email:
+<br>
+<input type="text" id="email">
+<br>
+</br>
+
+Password
+<br>
+<input type="password" id="password">
+<br>
+</br>
+Confirm Password
+<br>
+<input type="password" id="confirmpassword>
+<br>
+</br>
+<br>
+<button id="switch" onclick="toggle()" > switch </button>
+</br>
+    
+<div id="error"></div>
+  <div id="output"></div>
+<script>
+      function handleSubmit() {
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var password = document.getElementById("password").value.trim();
+      var confirmpassword = document.getElementById("confirmpassword").value;
+ 
+      var errorDiv = document.getElementById("error");
+      var outputDiv = document.getElementById("output");
+ 
+      errorDiv.innerHTML = "";
+      outputDiv.innerHTML = "";
+     if (name === "" || email === "" || password === "" || confirmpassword === "") {
+        errorDiv.innerHTML = "Please fill in all fields.";
+        return false;
+      }
+      outputDiv.innerHTML = `
+        <strong>Registration Complete!</strong><br><br>
+        Name: ${name}<br>
+        ID: ${id}<br>
+        Age: ${age}<br>
+        Department: ${department}
+      `;
+ 
+      return false;
+    }
+
+    </script>
+</p>
+</body>
+
+
+</html>
