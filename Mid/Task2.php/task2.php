@@ -28,6 +28,22 @@
         border: 1px solid #ccc;
     }
 
-   
+    button {
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #003366;
+    }
+    #error {
+      margin-top: 10px;
+      color: red;
+      text-align: center;
+    }
+
 
     
