@@ -1,0 +1,15 @@
+Create a PHP program inside an HTML page that displays a student’s result. Your program must follow these steps:
+
+Create a variable $name to store a student’s name.
+
+Create an associative array named $marks that contains three subjects and their marks:
+
+PHP → 85
+
+JavaScript → 90
+
+Database → 80
+
+Inside the HTML body, display the student’s name using PHP.
+
+Using a foreach loop, display each subject and its mark
